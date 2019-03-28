@@ -1,0 +1,49 @@
+ {% extends 'layout.html' %}
+
+{% block body %}
+
+        <form role="form" class="form-horizontal" method="POST" action="/sendMail" enctype='multipart/form-data'>
+              <div  class="form-group">
+                  <label class="col-lg-2 control-label">TP Contacts file</label>
+                  <div class="col-lg-10">
+                      <input type="file" id="tp-contact" name="tp-contact" class="form-control" accept=".csv" placeholder="No file selected">
+                  </div>
+                </div>
+              <div class="form-group">
+                  <label class="col-lg-2 control-label">Cc / Bcc</label>
+                  <div class="col-lg-10">
+                      <input type="text" placeholder="" id="cc" name="cc" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-lg-2 control-label">Subject</label>
+                  <div class="col-lg-10">
+                      <input type="text" placeholder="" id="subject" name="subject" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-lg-2 control-label">Message</label>
+                  <div class="col-lg-10">
+                      <textarea rows="10" cols="30" class="form-control" id="message" name="message"></textarea>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-lg-offset-2 col-lg-10">
+
+                  <div  class="form-group">
+                      <label class="col-lg-2 control-label">Add Attachment</label>
+                      <div class="col-lg-10">
+                          <input type="file" id="attachment" name="attachment[]" class="form-control" multiple="multiple">
+                      </div>
+                  </div>
+                      <!--<span class="btn green fileinput-button">
+                        <i class="fa fa-plus fa fa-white"></i>
+                        <span>Attachment</span>
+                        <input type="file" name="files[]" accept=".csv" multiple>
+                      </span>-->
+                      <button class="btn btn-send" type="submit">Send</button>
+                  </div>
+              </div>
+          </form>
+
+ {% endblock %}

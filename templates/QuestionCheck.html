@@ -1,0 +1,26 @@
+ {% extends 'layout.html' %}
+
+{% block body %}
+
+        <form role="form" class="form-horizontal" method="POST" action="/questionCheck" enctype='multipart/form-data'>
+              <div  class="form-group">
+                  <label class="col-lg-2 control-label">Choose a Questionaire to check</label>
+                  <div class="col-lg-10">
+                      <input type="file" id="tp-contact" name="question-file" class="form-control" accept=".docx" placeholder="No file selected">
+                  </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <input style="margin-top: 25px" class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                 </div>
+
+
+          </form>
+            <div style="display: {% if data %} block {% else %} none {% endif %}">
+                Please fill these fields
+            <p>
+                {{ data }}
+            </p>
+        </div>
+ {% endblock %}

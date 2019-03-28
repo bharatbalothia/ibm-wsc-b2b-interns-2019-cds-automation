@@ -1,0 +1,25 @@
+ {% extends 'layout.html' %}
+
+{% block body %}
+
+        <form role="form" class="form-horizontal" method="POST" action="/detailsExtract" enctype='multipart/form-data'>
+              <div  class="form-group">
+                  <label class="col-lg-2 control-label">Choose a survey File to Parse</label>
+                  <div class="col-lg-10">
+                      <input type="file" id="tp-contact" name="survey-file" class="form-control" accept=".docx" placeholder="No file selected">
+                  </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <input style="margin-top: 25px" class="btn btn-primary" type="submit" value="Submit">
+                    </div>
+                 </div>
+
+
+          </form>
+            <div>
+            <p>
+                {{ data }}
+            </p>
+        </div>
+ {% endblock %}
