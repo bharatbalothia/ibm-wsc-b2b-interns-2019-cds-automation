@@ -1,0 +1,11 @@
+,Date,File names,Questionnaire Send Date,Questionnaire Sent,Rejected Files,Status,Survey Sent,TP name
+0,2019-06-20 17:58,,,NO,,Survey Sent,YES,Hatson Corp.
+1,2019-06-20 17:59,"['IBM_AS2_Questionnaire_EuroGIODE(1).docx', 'IBM_FTP_Questionnaire_EuroGIODE.docx']",2019-06-20 18:07,YES,['IBM_FTP_Questionnaire_EuroGIODE_tesla_Incomplete.docx'],Some Files Rejected.,YES,Tesla
+2,2019-06-20 17:59,,,NO,,Survey Sent,YES,Magna 
+3,2019-06-20 17:59,,,NO,,TP Opted for VAN. Survey Completed. ,YES,Daimler Group
+4,2019-06-20 18:00,,,NO,,Survey Sent,YES,Scotts Miracle Gro
+5,2019-06-20 18:00,,,NO,,Survey Sent,YES,Epson & Co
+6,2019-06-20 18:00,,,NO,,Survey Sent,YES,Johnson & Johnson
+7,2019-06-20 18:00,,,NO,,Survey Sent,YES,Dov
+8,2019-06-20 18:01,,,NO,,Survey Sent,YES,Universal Metals
+9,2019-06-20 18:01,,,NO,,Survey Sent,YES,Some TP

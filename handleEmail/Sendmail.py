@@ -27,7 +27,7 @@ class Sendmail:
 
         doc = db.CreateDocument()
         doc.ReplaceItemValue("Form", "Memo")
-        doc.ReplaceItemValue("From", "rajrobin@in.ibm.com")
+        doc.ReplaceItemValue("Sent by", "CDS Admin")
         doc.ReplaceItemValue("Subject", subject)
 
         # assign random uid because sometimes Lotus Notes tries to reuse the same one

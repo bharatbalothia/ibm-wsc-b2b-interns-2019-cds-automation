@@ -1,0 +1,26 @@
+ {% extends 'layout.html' %}
+
+{% block body %}
+
+        <form role="form" class="form-horizontal" method="POST" action="/getReports">
+              <div  class="form-group">
+                  <label class="col-lg-2 control-label">Select Customers Names</label>
+                  <div class="col-lg-10">
+                    <select name="selectcustomer" class="selectpicker form-control">
+                      {% for o in data %}
+                      <option value="{{ o }}">{{ o }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+              <button class="btn btn-send" type="submit">Report</button>
+          </form>
+        {% if dftables %}
+        <center><h4>Trading Partners Details</h4></center>
+        <table class="table">{{dftables | safe}}</table><br>
+            <form role="form" class="form-horizontal" method="POST" action="/downloadReports">
+              <button class="btn btn-send" type="submit">Download</button>
+          </form>
+        {% endif %}
+
+ {% endblock %}
